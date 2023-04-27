@@ -1,0 +1,45 @@
+<div class="b1" >
+    <div class="mybg">
+    <div class="class1">
+        <div class="panel panel-warning" style="margin-top: 5%; width:380px;margin-left:auto; margin-right:auto">
+            <div class="panel-heading"><h2>Login</h2></div>
+           
+            <div class="panel-body padding">
+                <form class="form-horizontal" [formGroup]="loginForm">
+                    <div class="form-group" >
+                        <label for="name" class="col-xs-4 control-label" style="text-align:left"></label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" placeholder="Username" [ngClass]="{'valid':loginForm.controls['userName'].valid, 'invalid':loginForm.controls['userName'].invalid && !loginForm.controls['userName'].pristine}" formControlName="userName">
+                            <div *ngIf="loginForm.controls['userName'].errors && loginForm.controls['userName'].dirty">
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="password" class="col-xs-4 control-label" style="text-align:left"></label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control"placeholder="Password" [ngClass]="{'valid':loginForm.controls['password'].valid, 'invalid':loginForm.controls['password'].invalid && !loginForm.controls['password'].pristine}" formControlName="password">
+                            <div *ngIf="loginForm.controls['password'].errors && loginForm.controls['password'].dirty">
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div *ngIf="!valid" class="error">Invalid Credentials...Please try again...</div>
+                    <br />
+    
+                    <div class="form-group">
+                        <span class="col-xs-4"></span>
+                        <div class="col-xs-3">
+                            <button (click)="onSubmit()" style="margin-left: 70px;"class="btn">Login</button>
+                        
+                        <span class="col-xs-5" style="top:0px">
+                                <input type="reset" style="margin-left: 70px;" value="Reset" class="btn">
+                        </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>  
+</div>

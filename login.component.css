@@ -1,0 +1,72 @@
+.b1
+{
+    height:525px;
+    width:1215px;
+    overflow-y:hidden ;
+    overflow-x: hidden;
+
+}
+.mybg
+{
+background-image: url('../../assets/sales1.png');
+background-repeat: no-repeat;
+background-size: cover;
+width: 500px;
+height: 300px;
+margin-left: 200px;
+margin-top: 10px;
+
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container-styles{
+	position: relative; 
+	top: 180px;
+	width:50%
+}
+
+.padding{
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.link-underline{
+   color:#3baf31;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    position:relative;
+    left:50px;
+}
+.class1{
+    margin-left: 600px;
+    margin-top: 190px;
+
+}
+.panel-heading  h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-left: 99px;
+    
+}
+.form-control{
+    margin-left: 40px;
+    width: 200px;
+    height:25px;
+}
+.btn{
+    height: 30px;
+ width: 70px;
+ color: #fff;
+ font-size: 1rem;
+ font-weight: 400;
+ margin-right: -40px;
+ border: none;
+ cursor: pointer;
+ transition: all 0.2s ease;
+ background: rgb(205, 106, 251);
+    
+}
